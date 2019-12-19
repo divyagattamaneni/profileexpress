@@ -1,0 +1,31 @@
+{
+  "name": "profile_express",
+  "version": "1.0.0",
+  "description": "it is all about nodejs and express application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "mongodb",
+    "expresshandlerbar",
+    "multer"
+  ],
+  "author": "sai divya",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "handlebars": "^4.5.3",
+    "handlebars-intl": "^1.1.2",
+    "jquery": "^3.4.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.8.0",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.2"
+  }
+}

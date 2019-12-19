@@ -1,0 +1,38 @@
+<div class="container">
+    <h1 class="h1 display-6 text-left mt-4 text-light bg-dark p-1">add profile form</h1>
+    <form action="/profile/editprofile" method="POST" enctype="multipart/form-data" class="mt-4">
+  <div class="row">
+      <input type="hidden" name="_method" value="PUT">
+       <div class="col">
+      <input type="file" class="form-control" placeholder="upload photo" name="photo" value="{{profile.photo.0.path}}" aria-selected="true">
+    </div>
+    <div class="col-4 mt-2">
+      <input type="text" class="form-control" placeholder="enter name" name="name" placeholder="enter name" value="{{profile.name}}">
+    </div>
+    <div class="col-4 mt-2">
+      <input type="text" class="form-control" placeholder="enter phone number" name="phone number" placeholder="enter phone number"
+       value="{{profile.phonenumber}}">
+    </div>
+     <div class="col-4 mt-2">
+      <input type="text" class="form-control" placeholder="enter company" name="company" placeholder="enter company name" 
+      value="{{profile.company}}">
+    </div>
+     <div class="col-4 mt-2">
+      <input type="text" class="form-control" placeholder="enter location" name="location" placeholder="enter location" 
+      value="{{profile">
+    </div>
+     <div class="col-4 mt-2">
+      <input type="text" class="form-control" placeholder="enter education details" name="education" >
+    </div>
+     <div class="col-4 mt-2">
+      <button type="submit" class="btn btn-dark float-right mt-4"> submit </button>
+    </div>
+  </div>
+</form>
+{{#each errors}}
+<div class="col-md-4" offset-4>
+    <div class="alert alert-danger mt-2">{{text}}</div>
+</div>
+{{else}}
+{{/each}}
+</div>

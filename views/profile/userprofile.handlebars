@@ -1,0 +1,26 @@
+{{#each profile}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="../../images/user-icon-2098873_1280.png" alt="profilepic" class="img-responsive img-fluid">
+        </div>
+        <div class="col-md-9">
+            <h1 class="h1 bg-dark text-ligth mt-2 p-1"> Profile</h1>
+            <ul class="list-group">
+                <li class="list-group-item mt-2"><span>Name:</span>{{name}}</li>
+                <li class="list-group-item mt-2"><span>Phonenumber:</span>{{phonenumber}}></li>
+                <li class="list-group-item mt-2"><span>company:</span>{{company}}></li>
+                <li class="list-group-item mt-2"><span>location:</span>{{location}}></li>
+                <li class="list-group-item mt-2"><span>education:</span>{{education}}></li>
+                
+            </ul>
+            <p class="float-left display-block bg-danger mt-2 p-2"><span class="text-success text-left">{{formatDate date "short"}}</span>
+                </p>
+<p class="text-rigth float-rigth m-2"><span class="text-danger text-right">{{formatRelative date}}</span></p>
+<div class="form-group mt-2"><a href="/profile/editprofile/{{id}}" class="btn btn-outline-primary">edit profile</a></div>
+        </div>
+    </div>
+</div>
+{{else}}
+<h1 class="text-danger">no profile found</h1>
+{{/each}}
